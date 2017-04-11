@@ -2,11 +2,13 @@ $padding: 6px;
 $primary-color: red;
 body {
     font-family: 'PT Sans', sans-serif !important;
-    nav {
+    .navbar {
         margin: 0 !important;
+        border-radius: 0px;
         background: transparent;
         div {
             .navbar-header {
+                padding: 6px;
                 a {
                     color: #252525;
                 }
@@ -19,8 +21,21 @@ body {
                 list-style: none;
                 li {
                     display: inline-block;
+                    &:last-child {
+                        a {
+                            background: #252525 !important;
+                            border: 2px solid #252525;
+                            color: #fff;
+                            font-weight: bold;
+                            &:hover {
+                                background: #fff !important;
+                                color: #252525;
+                            }
+                        }
+                    }
                     a {
                         color: #252525;
+                        background-color: transparent !important;
                         display: block;
                         text-decoration: none;
                     }
@@ -50,6 +65,33 @@ body {
                 h2 {
                     text-align: center;
                     text-transform: uppercase;
+                    margin: 2% 0%;
+                }
+                .horz {
+                    height: 3px;
+                    background: #252525;
+                }
+                p {
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .section-expertise {
+        .container {
+            .row {
+                h2 {
+                    text-align: center;
+                    text-transform: uppercase;
+                    margin: 2% 0%;
+                }
+                div {
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        width: 150px;
+                        height: 150px;
+                    }
                 }
             }
         }
