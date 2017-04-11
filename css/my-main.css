@@ -1,13 +1,17 @@
-nav {
+body {
+  font-family: 'PT Sans', sans-serif !important;
+}
+
+body nav {
   margin: 0 !important;
   background: transparent;
 }
 
-nav div .navbar-header a {
+body nav div .navbar-header a {
   color: #252525;
 }
 
-nav div .navbar-nav {
+body nav div .navbar-nav {
   float: right !important;
   margin: 0;
   padding: 0;
@@ -15,17 +19,17 @@ nav div .navbar-nav {
   list-style: none;
 }
 
-nav div .navbar-nav li {
+body nav div .navbar-nav li {
   display: inline-block;
 }
 
-nav div .navbar-nav li a {
+body nav div .navbar-nav li a {
   color: #252525;
   display: block;
   text-decoration: none;
 }
 
-.landing-img {
+body .landing-img {
   background: url(../img/bg-img.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -41,11 +45,11 @@ nav div .navbar-nav li a {
   align-items: center;
 }
 
-.section-about {
+body .section-about {
   margin: 5% 10%;
 }
 
-.section-about .container .row h2 {
+body .section-about .container .row h2 {
   text-align: center;
   text-transform: uppercase;
 }

@@ -1,55 +1,56 @@
 $padding: 6px;
 $primary-color: red;
-nav {
-    margin: 0 !important;
-    background: transparent;
-    div {
-        .navbar-header {
-            a {
-                color: #252525;
-            }
-        }
-        .navbar-nav {
-            float: right !important;
-            margin: 0;
-            padding: 0;
-            padding: $padding;
-            list-style: none;
-            li {
-                display: inline-block;
+body {
+    font-family: 'PT Sans', sans-serif !important;
+    nav {
+        margin: 0 !important;
+        background: transparent;
+        div {
+            .navbar-header {
                 a {
                     color: #252525;
-                    display: block;
-                    text-decoration: none;
+                }
+            }
+            .navbar-nav {
+                float: right !important;
+                margin: 0;
+                padding: 0;
+                padding: $padding;
+                list-style: none;
+                li {
+                    display: inline-block;
+                    a {
+                        color: #252525;
+                        display: block;
+                        text-decoration: none;
+                    }
                 }
             }
         }
     }
-}
-
-.landing-img {
-    background: url(../img/bg-img.jpg) no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 100vh;
-    opacity: 0.8;
-    color: #252525;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.section-about {
-    margin: 5% 10%;
-    .container {
-        .row {
-            h2 {
-                text-align: center;
-                text-transform: uppercase;
+    .landing-img {
+        background: url(../img/bg-img.jpg) no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        opacity: 0.8;
+        color: #252525;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-about {
+        margin: 5% 10%;
+        .container {
+            .row {
+                h2 {
+                    text-align: center;
+                    text-transform: uppercase;
+                }
             }
         }
     }
