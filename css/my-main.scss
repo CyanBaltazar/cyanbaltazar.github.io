@@ -63,10 +63,18 @@ body {
         margin: 5% 10%;
         .container {
             .row {
+                display: flex;
+                justify-content: center;
+                &:first-child {
+                    margin: 2% 0%;
+                }
                 h2 {
+                    display: inline;
                     text-align: center;
                     text-transform: uppercase;
                     margin: 2% 0%;
+                    border-bottom: 2px solid #252525;
+                    padding-bottom: 20px;
                 }
                 .horz {
                     height: 3px;
@@ -81,13 +89,18 @@ body {
     .section-expertise {
         .container {
             .row {
+                display: flex;
+                justify-content: center;
                 &:nth-child(2) {
                     margin: 5% 0%;
                 }
                 h2 {
+                    display: inline;
                     text-align: center;
                     text-transform: uppercase;
                     margin: 2% 0%;
+                    border-bottom: 2px solid #252525;
+                    padding-bottom: 20px;
                 }
                 div {
                     display: flex;

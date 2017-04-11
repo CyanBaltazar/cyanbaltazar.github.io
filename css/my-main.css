@@ -68,10 +68,22 @@ body .section-about {
   margin: 5% 10%;
 }
 
+body .section-about .container .row {
+  display: flex;
+  justify-content: center;
+}
+
+body .section-about .container .row:first-child {
+  margin: 2% 0%;
+}
+
 body .section-about .container .row h2 {
+  display: inline;
   text-align: center;
   text-transform: uppercase;
   margin: 2% 0%;
+  border-bottom: 2px solid #252525;
+  padding-bottom: 20px;
 }
 
 body .section-about .container .row .horz {
@@ -83,14 +95,22 @@ body .section-about .container .row p {
   text-align: center;
 }
 
+body .section-expertise .container .row {
+  display: flex;
+  justify-content: center;
+}
+
 body .section-expertise .container .row:nth-child(2) {
   margin: 5% 0%;
 }
 
 body .section-expertise .container .row h2 {
+  display: inline;
   text-align: center;
   text-transform: uppercase;
   margin: 2% 0%;
+  border-bottom: 2px solid #252525;
+  padding-bottom: 20px;
 }
 
 body .section-expertise .container .row div {
