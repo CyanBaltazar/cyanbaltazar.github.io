@@ -2,6 +2,7 @@ $padding: 6px;
 $primary-color: red;
 body {
     font-family: 'PT Sans', sans-serif !important;
+    font-weight: 300;
     .navbar {
         margin: 0 !important;
         border-radius: 0px;
@@ -80,6 +81,9 @@ body {
     .section-expertise {
         .container {
             .row {
+                &:nth-child(2) {
+                    margin: 5% 0%;
+                }
                 h2 {
                     text-align: center;
                     text-transform: uppercase;
