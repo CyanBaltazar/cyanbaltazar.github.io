@@ -60,7 +60,7 @@ body {
         align-items: center;
     }
     .section-about {
-        margin: 5% 10%;
+        padding: 4% 10%;
         .container {
             .row {
                 display: flex;
@@ -68,48 +68,74 @@ body {
                 &:first-child {
                     margin: 2% 0%;
                 }
-                h2 {
-                    display: inline;
-                    text-align: center;
-                    text-transform: uppercase;
-                    margin: 2% 0%;
-                    border-bottom: 2px solid #252525;
-                    padding-bottom: 20px;
+                &:nth-child(2) {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    h5 {
+                        line-height: 2em;
+                        text-align: center;
+                    }
                 }
-                .horz {
-                    height: 3px;
-                    background: #252525;
-                }
-                p {
-                    text-align: center;
+            }
+            h2 {
+                display: inline;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 2% 0%;
+                border-bottom: 2px solid #252525;
+                padding-bottom: 20px;
+            }
+            .horz {
+                height: 3px;
+                background: #252525;
+            }
+            p {
+                text-align: center;
+            }
+        }
+    }
+}
+
+.section-expertise {
+    padding: 4% 10%;
+    background: #f0f0f0;
+    .container {
+        .row {
+            display: flex;
+            justify-content: center;
+            &:nth-child(2) {
+                margin: 5% 0%;
+            }
+            h2 {
+                display: inline;
+                text-align: center;
+                text-transform: uppercase;
+                margin: 2% 0%;
+                border-bottom: 2px solid #252525;
+                padding-bottom: 20px;
+            }
+            div {
+                display: flex;
+                justify-content: center;
+                img {
+                    width: 160px;
+                    height: 160px;
                 }
             }
         }
     }
-    .section-expertise {
-        .container {
-            .row {
+}
+
+.footer {
+    .container {
+        .row {
+            padding: 3%;
+            &:nth-child(1) {
                 display: flex;
+                flex-direction: column;
                 justify-content: center;
-                &:nth-child(2) {
-                    margin: 5% 0%;
-                }
-                h2 {
-                    display: inline;
-                    text-align: center;
-                    text-transform: uppercase;
-                    margin: 2% 0%;
-                    border-bottom: 2px solid #252525;
-                    padding-bottom: 20px;
-                }
-                div {
-                    display: flex;
-                    justify-content: center;
-                    img {
-                        width: 150px;
-                        height: 150px;
-                    }
-                }
+                align-items: center;
             }
         }
     }
