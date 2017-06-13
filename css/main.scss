@@ -1,0 +1,102 @@
+@mixin respond-to($breakpoint) {
+    @if $breakpoint=="xs" {
+        @media screen and (max-width: 767px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="sm" {
+        @media (min-width: 768px) and (max-width: 991px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="md" {
+        @media (min-width: 992px) and (max-width: 1199px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="lg" {
+        @media screen and (min-width: 1200px) and (max-width: 1399px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="xlg" {
+        @media (min-width: 1400px) and (max-width: 1599px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="xxlg" {
+        @media (min-width: 1600px) and (max-width: 1899px) {
+            @content;
+        }
+    }
+    @else if $breakpoint=="xxxlg" {
+        @media (min-width: 1900px) {
+            @content;
+        }
+    }
+}
+
+.navbar {
+    background: #e91e63 !important;
+    border-bottom: none !important;
+    .container {
+        div {
+            &.navbar-header {
+                a {
+                    font-family: 'Oswald', sans-serif;
+                    color: #fff;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+            &.navbar-collapse {
+                ul {
+                    li {
+                        &.active {
+                            a {
+                                background: transparent;
+                                color: #fff;
+                            }
+                        }
+                        a {
+                            font-family: 'Oswald', sans-serif;
+                            text-transform: uppercase;
+                            color: #fff;
+                            &:hover {
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.intro-section {
+    .container-fluid {
+        padding: 0px;
+        height: 100%;
+        .row {
+            margin: 0;
+            height: 100%;
+            div {
+                padding: 0px;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // .carousel {
+                //     height: 100%;
+                // }
+                h1 {
+                    color: #fff;
+                    font-size: 4em;
+                    font-family: 'Baloo Bhaina', cursive;
+                    margin-top: -200px;
+                }
+            }
+        }
+    }
+}
