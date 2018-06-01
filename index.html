@@ -14,12 +14,14 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -36,61 +38,48 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 
-
-    <!-- Intro Section -->
-    <section id="intro" class="intro-section">
-        <div class="container-fluid">
+    <div class="container-fluid">
+        <!-- Intro Section -->
+        <section id="intro" class="intro-section height-100vh d-flex justify-content-center align-items-center">
             <div class="row">
-                <div class="col-md-12">
-                    <img class="img-circle" src="img/me.jpg" alt="person">
-                    <h1 class="work-label">A UI/UX Web Developer and a Coffee Addict.</h1>
-                    <a class="page-scroll btn-who-me" href="#story">About Me</a>
+                <div class="col">
+                    <img class="img-circle" src="img/cyan baltazar.jpg" alt="person">
+                    <h1 class="section-title">UI Engineer. Coffee Lover.</h1>
+                    <button type="button" class="page-scroll btn btn-danger" href="#story">About Me <i class="fa fa-arrow-down" style="font-size: 14px !important;"></i></button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- About/Story Section -->
-    <section id="story" class="story-section">
-        <div class="container">
-            <div class="row flex-justify-center">
-                <div class="col-md-8 col-md-offset-0">
+        <!-- About/Story Section -->
+        <section id="story" class="story-section height-100vh d-flex justify-content-center align-items-center">
+            <div class="row d-flex justify-content-center">
+                <div class="col">
                     <h1 class="section-title">Hello!</h1>
-                    <p>My name is Christian Ryan Baltazar from the Philippines. A web designer/front-end web developer.</p>
-                    <p>I love to design and craft simple, beautiful, but usable websites and digital products thus will help you achieve your personal or business goals. </p>
-                    <p class="margin-bottom-20">If I'm not coding or playing with pixels, you can find me on the basketball court or at the nearest coffee shop in my hometown, Tarlac City Philippines, with my friends and loved ones.</p>
-                    <a class="page-scroll my-btn flex-align-justify-center margin-auto" href="#connect">Connect with me</a>
+                    <p>My name is Christian Ryan Baltazar from the Philippines.</p>
+                    <p>A highly skilled UI Engineer with a background in MBA, have a good taste in design<br>and with a natural interest and curiosity about UX (User Centered Solutions).</p>
+                    <p class="margin-bottom-20">I am open to work here and abroad ideally in Singapore, Australia and in the US.<br>If I'm not coding or playing with pixels, you can find me on the<br>basketball court or at the nearest coffee shop in my hometown,<br>Tarlac City Philippines,
+                        with my friends and loved ones.</p>
+                    <button type="butotn" class="page-scroll btn btn-danger flex-align-justify-center margin-auto" href="#connect">Connect with me <i class="fa fa-arrow-down" style="font-size: 14px !important;"></i></button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Skills Section -->
-    <!-- <section id="skills" class="skills-section">
-        <div class="container">
+        <!-- Connect Section -->
+        <section id="connect" class="connect-section height-100vh d-flex justify-content-center align-items-center">
             <div class="row">
-                <div class="col-md-12">
-                    <h1>Skills</h1>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
-    <!-- Connect Section -->
-    <section id="connect" class="connect-section">
-        <div class="container">
-            <div class="row flex-justify-center">
-                <div class="col-md-8 col-md-offset-0">
+                <div class="col">
                     <h1 class="section-title">Connect with me</h1>
-                    <div class="flex-align-justify-space-around padding-10">
+                    <div class="d-flex justify-content-around padding-10">
                         <a href="https://www.facebook.com/cyanbaltazar" data-toggle="tooltip" title="Add me on facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/cyanbaltazar" data-toggle="tooltip" title="Follow me on twitter"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/in/christian-ryan-baltazar/" data-toggle="tooltip" title="Connect with me on linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        <a href="https://stackoverflow.com/users/6665604/cyan-baltazar" data-toggle="tooltip" title="Connect with me on stackoverflow (Hooray, I'm top 12% this year 2018!)"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
                         <a href="https://www.instagram.com/cyanbaltazar/" data-toggle="tooltip" title="Follow me on instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
+
 
 
 

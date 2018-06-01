@@ -1,3 +1,22 @@
+* {
+  font-family: 'Roboto Condensed', sans-serif;
+  margin: 0px;
+  padding: 0px !important;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+.height-100vh {
+  height: 100vh !important;
+}
+
+.intro-section {
+  padding: 0px;
+  height: 100vh;
+}
+
 @media screen and (max-width: 767px) {
   .intro-section {
     padding-top: 50px;
@@ -10,17 +29,12 @@
   }
 }
 
-.intro-section .container-fluid {
-  padding: 0px;
-  height: 100%;
-}
-
-.intro-section .container-fluid .row {
+.intro-section .row {
   margin: 0;
   height: 100%;
 }
 
-.intro-section .container-fluid .row div {
+.intro-section .row div {
   padding: 0px;
   height: 100vh;
   display: flex;
@@ -29,48 +43,13 @@
   justify-content: center;
 }
 
-.intro-section .container-fluid .row div .img-circle {
-  height: 250px;
-  width: 250px;
-  border-radius: 50%;
-  margin-top: -120px;
-}
-
-@media screen and (max-width: 767px) {
-  .intro-section .container-fluid .row div .img-circle {
-    width: 140px;
-    height: 140px;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  .intro-section .container-fluid .row div .img-circle {
-    width: 140px;
-    height: 140px;
-  }
-}
-
-.intro-section .container-fluid .row div h1 {
+.intro-section .row div h1 {
   color: #fff;
   font-size: 4em;
   font-family: 'Baloo Bhaina', cursive;
   margin-top: 40px;
 }
 
-.intro-section .container-fluid .row div a {
-  height: 45px;
-  width: 160px;
-  font-size: 1.1em;
-  font-weight: bold;
-  color: #fff;
-  border-radius: 4px;
-  background: #e91e63;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 @media screen and (max-width: 767px) {
   .story-section {
     padding-top: 50px !important;
@@ -83,74 +62,74 @@
   }
 }
 
-.story-section .container .row div .balut-story {
+.story-section .row div .balut-story {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.story-section .container .row div .balut-story p {
+.story-section .row div .balut-story p {
   width: 75%;
   text-align: left;
   line-height: 2em;
 }
 
-.story-section .container .row div table {
+.story-section .row div table {
   width: 100%;
   border: 2px solid #e91e63;
 }
 
-.story-section .container .row div table thead tr {
+.story-section .row div table thead tr {
   border: 2px solid #e91e63;
   background: #e91e63;
 }
 
-.story-section .container .row div table thead tr th {
+.story-section .row div table thead tr th {
   text-align: center;
   padding: 10px;
   color: #fff;
 }
 
-.story-section .container .row div table thead tr th:first-child {
+.story-section .row div table thead tr th:first-child {
   width: 50%;
 }
 
-.story-section .container .row div table thead tr th:last-child {
+.story-section .row div table thead tr th:last-child {
   width: 25%;
 }
 
-.story-section .container .row div table thead tr th:not(:last-child) {
+.story-section .row div table thead tr th:not(:last-child) {
   border-right: 2px solid #fff;
 }
 
-.story-section .container .row div table tbody tr:not(:last-child) {
+.story-section .row div table tbody tr:not(:last-child) {
   border-bottom: 2px solid #e91e63;
 }
 
-.story-section .container .row div table tbody tr:nth-child(3) td:nth-child(1), .story-section .container .row div table tbody tr:nth-child(4) td:nth-child(1), .story-section .container .row div table tbody tr:nth-child(5) td:nth-child(1), .story-section .container .row div table tbody tr:nth-child(6) td:nth-child(1) {
+.story-section .row div table tbody tr:nth-child(3) td:nth-child(1), .story-section .row div table tbody tr:nth-child(4) td:nth-child(1), .story-section .row div table tbody tr:nth-child(5) td:nth-child(1), .story-section .row div table tbody tr:nth-child(6) td:nth-child(1) {
   padding-left: 30px;
 }
 
-.story-section .container .row div table tbody tr td {
+.story-section .row div table tbody tr td {
   padding: 10px;
 }
 
-.story-section .container .row div table tbody tr td:first-child {
+.story-section .row div table tbody tr td:first-child {
   width: 50%;
   text-align: left;
 }
 
-.story-section .container .row div table tbody tr td:nth-child(2), .story-section .container .row div table tbody tr td:last-child {
+.story-section .row div table tbody tr td:nth-child(2), .story-section .row div table tbody tr td:last-child {
   width: 25%;
   text-align: center;
 }
 
-.story-section .container .row div table tbody tr td:not(:last-child) {
+.story-section .row div table tbody tr td:not(:last-child) {
   border-right: 2px solid #e91e63;
 }
 
-.story-section .container .row div table tbody tr td:not(:first-child) {
+.story-section .row div table tbody tr td:not(:first-child) {
   text-align: center;
 }
 
@@ -188,25 +167,30 @@ p {
   line-height: 1.6em;
 }
 
-.flex-justify-center {
-  display: flex;
-  justify-content: center;
+.img-circle {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin-top: -120px;
 }
 
-.flex-align-justify-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (max-width: 767px) {
+  .img-circle {
+    width: 140px;
+    height: 140px;
+  }
 }
 
-.flex-align-justify-space-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+@media (min-width: 768px) and (max-width: 991px) {
+  .img-circle {
+    width: 140px;
+    height: 140px;
+  }
 }
 
-.margin-auto {
-  margin: auto;
+.btn {
+  padding: .375rem .75rem !important;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
 .margin-bottom-0 {
@@ -297,7 +281,7 @@ p {
   padding: 50px;
 }
 
-.my-btn {
+.btn-structure, .my-btn {
   height: 45px;
   width: 160px;
   font-size: 1.1em;
@@ -307,11 +291,15 @@ p {
   text-decoration: none;
 }
 
-.my-btn {
+.text-decor-none {
+  text-decoration: none;
+}
+
+.shadow, .my-btn {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
 }
 
-.my-btn {
+.color-pink, .my-btn {
   background: #e91e63;
 }
 
